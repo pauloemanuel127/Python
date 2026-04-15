@@ -1,12 +1,14 @@
-#Resolução do exercicio BC 1026 - To carry or not to carry
+#How to EOF
 
-#input
- 
+#The while True loop function stop working when the computer run out of memory, 
+#because the program enter the except block due to the EOFError.
 while True:
     try:
-        entrada = input()
-      
-        print(f'voce digitou {entrada}')
+        entrada = input().split()
+        a = int(entrada[0])
+        b = int(entrada[1])
+
+        print(f"{a} e {b}")
 
     except EOFError:
         break
