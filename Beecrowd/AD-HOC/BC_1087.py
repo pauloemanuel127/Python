@@ -14,11 +14,11 @@ while True:
     #Then, another `if` statement checks how many moves the queen will make.
     if 1 <= x1 <= 8 and 1 <= x2 <= 8 and 1 <= y1 <= 8 and 1 <= y2 <= 8:
         if X == Y:
-            print('0')
+            print(0)
         elif x1 == x2 or y1 == y2 or abs(x1 - x2) == abs(y1 - y2):
-            print('1')
+            print(1)
         else:
-            print('2')
+            print(2)
     elif x1 == 0 and x2 == 0 and y1 == 0 and y2 == 0:
         break
     else:
