@@ -1,7 +1,7 @@
 #How to EOF
 
-#The while True loop function stop when the program runs out of input and enter the EOFError, 
-#because the program enter the except block due to the EOFError.
+#The while True loop function stops whens there is no more input data do be read, 
+#triggering the EOFError and breaking the loop.
 while True:
     try:
         entrada = input().split()
