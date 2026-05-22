@@ -1,3 +1,5 @@
+#Atividade 2 para a disciplina de pensamento computacional
+
 n1 = float(input())
 n2 = float(input())
 n3 = float(input())

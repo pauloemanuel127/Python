@@ -1,4 +1,4 @@
-#Atividade para a disciplina de pensamento computacional
+#Atividade 1 para a disciplina de pensamento computacional
 
 valor =  int(input())
 forma = input()
