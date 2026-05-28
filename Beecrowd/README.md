@@ -1,0 +1,2 @@
+# Repositorio destinado para soluções de problemas/questões do beecrowd
+Aqui guardo minhas resoluções de problemas do **beecrowd** que reforçam meu conhecimento na sintaxe de python e demonstram minha evolução na logica computacional e na resolução de problemas.

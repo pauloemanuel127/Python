@@ -1,6 +1,5 @@
 # Estudos
 Repositório dedicado para guardar minhas resoluções de desafios e exercicios enquanto aprendo Python.
-
 > **Beecrowd** (https://www.beecrowd.com.br/) é o principal site utilizado para a realização de exercicios.
 
 ## Entendendo Algoritmos 
@@ -10,3 +9,6 @@ Repositório dedicado para guardar minhas resoluções de desafios e exercicios 
 > Documentação do **Python** (https://docs.python.org/pt-br/3/)
 
 A documentação do Python e de suas Bibliotecas também foram base para o aprendizado de algumas coisas desse repositorio.
+
+## Pensamento Computacional
+**Pensamento Computacional** é uma disciplina do primeiro semestre do curso Bacharelado em Tecnologia da Informação, nela é estudada a logica de programação e a linguagem de programação Python.
