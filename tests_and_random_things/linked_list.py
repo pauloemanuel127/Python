@@ -1,4 +1,6 @@
-#Trying to make a linked list algorith
+# Trying to make a linked list algorith, 
+# The linked list have O(1) complexity for insertion and delete, but O(n) for searching.
+# Meanwhile Arrays have O(n) for insertion and delete, but O(1) for search.
 
 def create_node(value):
     """
