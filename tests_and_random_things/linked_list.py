@@ -65,7 +65,7 @@ def remove(head, value):
 
 def find(head, target):
     """
-    This function searches linearly if the target it's on the list,
+    This function searches linearly if the target it on the list,
     if it's on the list returns a message with its position,
     if not returns a message saying it isn't present.
     """
@@ -92,7 +92,7 @@ def find(head, target):
     
 def display(head):
     """
-    This fuction prints the elements on the linked list.
+    This function prints the elements on the linked list.
     """
 
     # Aqui ele pega todos os elementos da lista até o ultimo que é quando o valor de current['next'] for igual a None
