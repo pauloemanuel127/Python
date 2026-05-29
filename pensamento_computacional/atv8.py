@@ -17,6 +17,9 @@ for i in range(0, testes):
         pb = pb + ((pb*g2)//100)
         anos = anos + 1
 
+        if anos > 100:
+            break
+        
     if anos > 100:
         print("Mais de 1 seculo.")
     
