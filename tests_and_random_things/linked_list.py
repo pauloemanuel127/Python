@@ -59,6 +59,7 @@ def remove(head, value):
             if current['next']['value'] == value:
                 current['next'] = current['next']['next']
                 return head
+            
             else:
                 current = current['next']
         return head
