@@ -7,3 +7,4 @@
 - algoritmo que gera a tabuada do numero desejado
 - alguns codigos para o aprendizado do tkinter
 - arquivo Lists.py onde fiz um dossie das listas no python e suas funções
+- algoritmo de lista encadeada com suas funções
