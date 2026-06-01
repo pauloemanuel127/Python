@@ -17,5 +17,3 @@ def binary_search(list, iten):
         else:
             low = mid + 1
     return None
-
-
