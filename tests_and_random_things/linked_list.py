@@ -91,6 +91,7 @@ def update(head, value, new_value):
             current = current['next']
 
     print(f"O valor não está presente na lista")
+    return head
 
 def find(head, target):
     """
