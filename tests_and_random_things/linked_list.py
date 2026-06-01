@@ -64,6 +64,34 @@ def remove(head, value):
                 current = current['next']
         return head
 
+def update(head, value, new_value):
+    """
+    This function receives the list, the target element, and the new one.
+    Searches linearly if the target is on the list,
+    if it's on the list substitutes the value for the new one
+    if not print a message saying the element isn't on the list.
+    """
+    # Aqui ele coloca o ponteiro e verifica se é None, caso sejá ele não entra no loop,
+    # caso não entramos no processo de busca linear até o elemento solicitado, que irá ser alterado
+    # se o elemento desejado for encontrado ele irá ser substituido pelo novo valor
+    # quando o procedimento dá certo ele exibe uma mensagem informando.
+    # Caso o valor não seja encontrado e o current chegar a None, 
+    # o loop acaba e exibe uma mensagem informando que o elemento não está na lista.
+
+    current = head
+
+    while current is not None:
+
+        if current['value'] == value:
+            current['value'] = new_value
+            print("O valor foi alterado com sucesso")
+            return head
+        
+        else:
+            current = current['next']
+
+    print(f"O valor não está presente na lista")
+
 def find(head, target):
     """
     This function searches linearly if the target it on the list,
@@ -107,17 +135,3 @@ def display(head):
         current = current['next']
     
     print(" -> ".join(elements) + " -> None")
-
-my_list = None
-
-my_list = append(my_list, 10)
-my_list = append(my_list, 20)
-my_list = append(my_list, 30)
-
-find(my_list, 20)
-display(my_list)
-
-my_list = remove(my_list, 20)
-
-find(my_list, 20)
-display(my_list)
