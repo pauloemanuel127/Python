@@ -4,5 +4,5 @@ Nesse repositorio estou registrando todas as atividades que realizei para a disc
 ### Conteudos Praticados:
 - [x] Estruturas Condicionais (`if`, `elif`, `else`)
 - [x] Estruturas de Repetição (`while`, `for`)
-- [ ] Listas
+- [x] Listas
 - [ ] Funções
