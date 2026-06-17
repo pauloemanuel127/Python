@@ -1,6 +1,10 @@
 #Atividade 14 para a disciplina de pensamento computacional
 
 def fuso(h0, t, f):
+    """
+    Recebe 3 valores, h0 que é a hora de saída do avião, t que é o tempo de duração da viagem e f que representa o fuso horario
+    Com isso calcula para qual horario deverá ajudar seu relogio quando chegar.
+    """
 
     hora_de_chegada = h0 + t + f
 
