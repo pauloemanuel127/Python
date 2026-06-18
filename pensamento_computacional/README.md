@@ -5,4 +5,4 @@ Nesse repositorio estou registrando todas as atividades que realizei para a disc
 - [x] Estruturas Condicionais (`if`, `elif`, `else`)
 - [x] Estruturas de Repetição (`while`, `for`)
 - [x] Listas
-- [ ] Funções
+- [x] Funções
