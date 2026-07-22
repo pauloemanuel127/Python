@@ -3,7 +3,7 @@ Repositório dedicado para guardar minhas resoluções de desafios e exercicios 
 > **Beecrowd** (https://www.beecrowd.com.br/) é o principal site utilizado para a realização de exercicios.
 
 ## Entendendo Algoritmos 
-**Entendendo Algoritos** de Aditya Y. Bhargava é um dos livros utilizados para aprendizado e alguns codigos desse repositorio vem de lá.
+**Entendendo Algoritmos** de Aditya Y. Bhargava é um dos livros utilizados para aprendizado e alguns codigos desse repositorio vem de lá.
 
 ## Documentação do Python e de suas Bibliotecas
 > Documentação do **Python** (https://docs.python.org/pt-br/3/)
