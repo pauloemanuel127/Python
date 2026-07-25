@@ -103,16 +103,16 @@ comentarios: {self.comentarios}\n""")
         return
 
         
-canal_teste = Canal("joao", "amo youtube", 10000)
+canal_paulo = Canal("joao", "amo youtube", 10000)
 canal_jabulandio = CanaisAmigos("Primo do jabulandio", "faço videos com meu primo obeso e sordido", 100, ["pauloemanuel127", "ramon_royale", "GuguGx", "Voltailk_Breno"])
 
-# print(canal_teste.inscitos)
+# print(canal_paulo.inscitos)
 # print(canal_jabulandio.inscitos)
 
 # canal_jabulandio.inscrever()
-# canal_teste.inscrever(1000000)
+# canal_paulo.inscrever(1000000)
 
-# print(canal_teste.inscitos)
+# print(canal_paulo.inscitos)
 # print(canal_jabulandio.inscitos)
 # print(canal_jabulandio.membros)
 
