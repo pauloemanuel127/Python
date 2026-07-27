@@ -14,6 +14,14 @@ class Tamagochi:
         self.estado = "jogando"
         self.loop()
 
+    def reiniciar(self):
+
+        self.fome = 50
+        self.sono = 50
+        self.tristeza = 50
+        self.estado = "jogando"
+        self.loop()
+
     def sair(self):
 
         self.estado = "parado"
@@ -31,7 +39,7 @@ class Tamagochi:
         valor = input("Como seu tamagochi morreu, você deseja criar outro? S/N\n").lower()
 
         if valor == "s":
-            self.jogar()
+            self.reiniciar()
 
         else:
             self.sair()
