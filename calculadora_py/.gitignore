@@ -1,0 +1,6 @@
+# Ignorar arquivos compilados do Python
+__pycache__/
+*.pyc
+
+#Ignorar o historico.txt
+historico.txt

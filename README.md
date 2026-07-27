@@ -12,3 +12,7 @@ A documentação do Python e de suas Bibliotecas também foram base para o apren
 
 ## Pensamento Computacional
 **Pensamento Computacional** é uma disciplina do primeiro semestre do curso Bacharelado em Tecnologia da Informação, nela é estudada a logica de programação e a linguagem de programação Python.
+
+## Calculadora_py
+
+Calculadora com diversar operações disponiveis, sendo meu primeiro projeto real em python.
