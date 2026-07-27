@@ -36,13 +36,14 @@ class Tamagochi:
             self.tempo()
             self.logica()
 
-        valor = input("Como seu tamagochi morreu, você deseja criar outro? S/N\n").lower()
+        if self.estado == "game_over":
+            valor = input("Como seu tamagochi morreu, você deseja criar outro? S/N\n").lower()
 
-        if valor == "s":
-            self.reiniciar()
+            if valor == "s":
+                self.reiniciar()
 
-        else:
-            self.sair()
+            else:
+                self.sair()
 
     def sentir_fome(self):
 
