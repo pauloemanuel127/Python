@@ -31,6 +31,7 @@ class ContaBancaria:
 
             print(f"Saldo insuficiente!")
             _ = input("Precione a tecla Enter para proseguir\n")
+            
     def exibir_saldo(self):
 
         print(f"=" *15, "SALDO", "=" *15, "\n")
