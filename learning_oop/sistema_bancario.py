@@ -49,6 +49,7 @@ class ContaBancaria:
               f"Digite 2 para Saque\n"\
               f"Digite 3 para Exibir Saldo\n"\
               f"Digite 4 para Sair")
+        print("=" *37)
 
     def começar(self):
 
