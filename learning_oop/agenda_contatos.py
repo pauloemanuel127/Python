@@ -1,10 +1,43 @@
+class Contato:
+
+    def __init__(self, nome: str, numero: int) -> None:
+
+        self.nome: str = nome
+        self.__numero: int = numero
+
+    def __repr__(self) -> str:
+
+        return f"{self.nome}"
+
+    def atualizar(self, novo_nome: str ="", novo_numero: int= 0) -> None:
+
+        if novo_nome == "" and novo_numero == 0:
+
+            return
+        
+        elif novo_nome == "":
+
+            self.__numero: int = novo_numero
+
+        elif novo_numero == 0:
+
+            self.nome: str = novo_nome
+
+        else:
+
+            self.nome: str = novo_nome
+            self.__numero: int = novo_numero
+
+    def demonstrar(self) -> None:
+
+        print(f"nome: {self.nome}; numero: {self.__numero}")
 class Agenda:
 
-    def __init__(self) -> object:
+    def __init__(self) -> None:
 
         self.contatos: list = []
 
-    def add_contato(self, novo_contato: object) -> None:
+    def add_contato(self, novo_contato: Contato) -> None:
 
         if novo_contato in self.contatos:
 
@@ -67,40 +100,6 @@ class Agenda:
                 return
 
         print("Contato não está na agenda")
-
-class Contato:
-
-    def __init__(self, nome: str, numero: int) -> object:
-
-        self.nome: str = nome
-        self.__numero: int = numero
-
-    def __repr__(self) -> str:
-
-        return f"{self.nome}"
-
-    def atualizar(self, novo_nome: str ="", novo_numero: int= 0) -> object:
-
-        if novo_nome == "" and novo_numero == 0:
-
-            return
-        
-        elif novo_nome == "":
-
-            self.__numero: int = novo_numero
-
-        elif novo_numero == 0:
-
-            self.nome: str = novo_nome
-
-        else:
-
-            self.nome: str = novo_nome
-            self.__numero: int = novo_numero
-
-    def demonstrar(self) -> None:
-
-        print(f"nome: {self.nome}; numero: {self.__numero}")
 
 agenda = Agenda()
 
