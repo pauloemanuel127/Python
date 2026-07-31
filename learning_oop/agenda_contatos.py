@@ -31,6 +31,7 @@ class Contato:
     def demonstrar(self) -> None:
 
         print(f"nome: {self.nome}; numero: {self.__numero}")
+        
 class Agenda:
 
     def __init__(self) -> None:
