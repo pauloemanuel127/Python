@@ -2,5 +2,3 @@
 __pycache__/
 *.pyc
 
-#Ignorar o historico.txt
-historico.txt
