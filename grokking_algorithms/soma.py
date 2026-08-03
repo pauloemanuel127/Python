@@ -1,5 +1,5 @@
-# funções do exercicios do livro, função de soma de elementos de um array, função de conta de quantos elementos tem em um array
-# e função para encontrar o valor mais alto em um array
+# funções do exercicios do livro, função de soma de elementos de um array, função de conta de quantos elementos tem em um array,
+# função para encontrar o valor mais alto em um array e busca binaria por meio da recursão.
 
 def soma(arr: list) -> int:
 
