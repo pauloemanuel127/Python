@@ -13,7 +13,7 @@ class Carrinho:
 
     def __init__(self) -> None:
 
-        self.__produtos = []
+        self.__produtos: list = []
 
     def adicionar_produto(self, produto: Produto) -> None:
 
