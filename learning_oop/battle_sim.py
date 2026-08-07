@@ -5,9 +5,9 @@ class Personagem:
     def __init__(self, nome: str) -> None:
 
         self.nome: str = nome
-        self._vida: int = 10
-        self._ataque: int = 2
-        self._magia: int = 3
+        self._vida: float = 10.0
+        self._ataque: float = 4.0
+        self._magia: float = 4.0
         self._defesa: int = 5
         self._defesa_magica: int = 5
 
@@ -29,6 +29,21 @@ class Personagem:
 
         return self._vida > 0
 
+    def get_defesa(self) -> int:
+
+        return self._defesa
+
+    def get_defesa_magica(self) -> int:
+
+        return self._defesa_magica
+
+    def get_defesas(self) -> int:
+
+        return self._defesa + self._defesa_magica
+
+    def get_hp(self) -> str:
+
+        return f"O {self.nome} está com {int(self._vida)} de vida"
 class Mago(Personagem):
 
     def __init__(self, nome: str) -> None:
@@ -39,14 +54,9 @@ class Mago(Personagem):
 
     def atacar(self, inimigo: Personagem) -> None:
 
-        valor = randint(3, 8)
+        valor = randint(3, 7)
         inimigo.sofrer_dano(self, self._magia * valor)
-        print(f"O {self.nome} atacou e causou {self._magia * valor} de dano")
-
-    def get_hp(self) -> str:
-
-        return f"O {self.nome} está com {self._vida} de vida"
-
+        print(f"O {self.nome} atacou e causou {int((self._magia * valor) - inimigo.get_defesa_magica())} de dano")
 class Guerreiro(Personagem):
 
     def __init__(self, nome: str) -> None:
@@ -57,30 +67,26 @@ class Guerreiro(Personagem):
 
     def atacar(self, inimigo: Personagem) -> None:
 
-        valor = randint(3, 8)
+        valor = randint(3, 7)
         inimigo.sofrer_dano(self, self._ataque * valor)
-        print(f"O {self.nome} atacou e causou {self._ataque * valor} de dano")
-
-    def get_hp(self) -> str:
-
-        return f"O {self.nome} está com {self._vida} de vida"
-    
+        print(f"O {self.nome} atacou e causou {int((self._ataque * valor) - inimigo.get_defesa())} de dano")  
 class Monstro(Personagem):
 
     def __init__(self):
 
         super().__init__("Goblin")
-        self._vida = 30
+        self._vida: float = 20.0
+        self._ataque: float = 2.5
 
     def atacar(self, inimigo: Personagem) -> None:
 
-        valor = randint(6, 12)
+        valor = randint(5, 10)
         inimigo.sofrer_dano(self, self._ataque * valor)
-        print(f"O Monstro atacou e causou {self._ataque * valor} de dano")
+        print(f"O Monstro atacou e causou {int((self._ataque * valor) - inimigo.get_defesas())} de dano")
 
     def get_hp(self) -> str:
 
-        return f"O Monstro está com {self._vida} de vida"
+        return f"O Monstro está com {int(self._vida)} de vida"
 
 class Arena:
 
@@ -123,6 +129,19 @@ class Arena:
                 print(Monstro.get_hp())
 
             else:
+
+                if Personagem.vivo(): 
+
+                    print("Você venceu! O monstro morreu\n")
+
+                elif Monstro.vivo():
+
+                    print(f"Você perdeu, seu personagem: {Personagem.nome} morreu\n")
+
+                else:
+
+                    print(f"Os dois guerreiros morreram lutando, infelizmente você perdeu e seu personagem: {Personagem.nome} morreu\n")
+
                 break
 
         self.jogo = "acabou"
@@ -144,3 +163,9 @@ class Arena:
 
                 self.jogo = "jogando"
                 print("Obrigado por jogar!")
+
+monstro = Monstro()
+
+arena = Arena()
+
+arena.começar(monstro)
