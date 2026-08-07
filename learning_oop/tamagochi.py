@@ -116,15 +116,19 @@ class Tamagochi:
             case "sair":
                 self.sair()
 
-jogo = Tamagochi()
+if __name__ == "__main__":
 
-print("Bem Vindo\n" \
-"Deseja iniciar o jogo? S/N")
+    # Instanciando o objeto
+    jogo = Tamagochi()
 
-entrada = input().lower()
+    # começando o jogo
+    print("Bem Vindo\n" \
+    "Deseja iniciar o jogo? S/N")
 
-if entrada == "s":
-    jogo.jogar()
+    entrada = input().lower()
 
-else:
-    print("Obrigado por acessar")
+    if entrada == "s":
+        jogo.jogar()
+
+    else:
+        print("Obrigado por acessar")

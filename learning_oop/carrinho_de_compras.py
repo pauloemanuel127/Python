@@ -60,23 +60,28 @@ class Carrinho:
         print(f"{f"TOTAL = {self.__calcular_total()}":^38}")
         print("="*38)
 
+if __name__ == "__main__":
 
-banana = Produto("Banana", 10.00)
-chocolate = Produto("Chocolate", 15.00)
-pêra = Produto("Pêra", 8.00)
-toddynho = Produto("Toddynho", 5.00)
-treloso = Produto("Treloso", 3.00)
+    # Instanciando os objetos
+    banana = Produto("Banana", 10.00)
+    chocolate = Produto("Chocolate", 15.00)
+    pêra = Produto("Pêra", 8.00)
+    toddynho = Produto("Toddynho", 5.00)
+    treloso = Produto("Treloso", 3.00)
+    carrinho = Carrinho()
 
-carrinho = Carrinho()
+    # testando a função de adicionar produto
+    carrinho.adicionar_produto(banana)
+    carrinho.adicionar_produto(chocolate)
+    carrinho.adicionar_produto(pêra)
+    carrinho.adicionar_produto(toddynho)
+    carrinho.adicionar_produto(treloso)
 
-carrinho.adicionar_produto(banana)
-carrinho.adicionar_produto(chocolate)
-carrinho.adicionar_produto(pêra)
-carrinho.adicionar_produto(toddynho)
-carrinho.adicionar_produto(treloso)
+    # testando a função de exibir itens
+    carrinho.exibir_carrinho()
 
-carrinho.exibir_carrinho()
+    # testando a função de remover itens
+    carrinho.remover_produto("Chocolate")
 
-carrinho.remover_produto("Chocolate")
-
-carrinho.exibir_carrinho()
+    # provando o funcionamento da função remover itens
+    carrinho.exibir_carrinho()

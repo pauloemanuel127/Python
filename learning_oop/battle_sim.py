@@ -164,8 +164,11 @@ class Arena:
                 self.jogo = "jogando"
                 print("Obrigado por jogar!")
 
-monstro = Monstro()
+if __name__ == "__main__":
 
-arena = Arena()
+    # instanciando os objetos
+    monstro = Monstro()
+    arena = Arena()
 
-arena.começar(monstro)
+    # começando a simulação
+    arena.começar(monstro)

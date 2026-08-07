@@ -102,17 +102,23 @@ class Agenda:
 
         print("Contato não está na agenda")
 
-agenda = Agenda()
+if __name__ == "__main__":
 
-contato1 = Contato("Breno", 84991122209)
-contato2 = Contato("Gustavo", 84913231412)
+    # instanciando objetos
+    agenda = Agenda()
+    contato1 = Contato("Breno", 84991122209)
+    contato2 = Contato("Gustavo", 84913231412)
 
-agenda.add_contato(contato1)
-agenda.add_contato(contato2)
+    # testando a função de adicionar
+    agenda.add_contato(contato1)
+    agenda.add_contato(contato2)
+    agenda.lista_contatos()
 
-agenda.lista_contatos()
-agenda.achar("Breno")
-agenda.atualizar("Gustavo")
-agenda.achar("Paulo")
-agenda.remover_contato("Bergson")
-agenda.lista_contatos()
+    # testando as funções de encontrar, e atualizar
+    agenda.achar("Breno")
+    agenda.atualizar("Gustavo")
+    agenda.achar("Paulo")
+
+    # testando a função de remover
+    agenda.remover_contato("Bergson")
+    agenda.lista_contatos()

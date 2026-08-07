@@ -107,5 +107,10 @@ class Catraca:
 
             print("\npara sair a catraca deve estar desligada")
 
-test = Catraca()
-test.começar()
+if __name__ == "__main__":
+
+    # Instanciando o objeto
+    test = Catraca()
+
+    # começando o teste
+    test.começar()

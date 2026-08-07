@@ -141,46 +141,46 @@ class User:
         
             self._user_livros.remove(item)
 
+if __name__ == "__main__":
 
-biblioteca_alexandria = Biblioteca()
-livro1 = Livro("1984", "George Orwell")
-livro2 = Livro("Dom Quixote", "Miguel de Cervantes")
-livro3 = Livro("O Hobbit", "J.R.R. Tolkien")
-jonas = User()
-visitante = User()
+    # Instanciando os objetos
+    biblioteca_alexandria = Biblioteca()
+    livro1 = Livro("1984", "George Orwell")
+    livro2 = Livro("Dom Quixote", "Miguel de Cervantes")
+    livro3 = Livro("O Hobbit", "J.R.R. Tolkien")
+    jonas = User()
+    visitante = User()
 
-print("--- ADICIONANDO LIVROS AO ACERVO ---")
-biblioteca_alexandria.add_book(livro1)
-biblioteca_alexandria.add_book(livro2)
-biblioteca_alexandria.add_book(livro3)
+    # teste da função de adicionar livros ao acervo
+    biblioteca_alexandria.add_book(livro1)
+    biblioteca_alexandria.add_book(livro2)
+    biblioteca_alexandria.add_book(livro3)
+    biblioteca_alexandria.add_book(livro1) 
+    print("\n")
+    biblioteca_alexandria.exibir_livros()
 
-biblioteca_alexandria.add_book(livro1) 
-print("\n")
+    # testando a função de emprestimo
+    jonas.emprestimo(biblioteca_alexandria, "1984")
+    jonas.emprestimo(biblioteca_alexandria, "O Hobbit")
+    print("\n")
 
-biblioteca_alexandria.exibir_livros()
+    jonas.exibir_user_livros()
 
-print("--- JONAS PEGANDO LIVROS ---")
-jonas.emprestimo(biblioteca_alexandria, "1984")
-jonas.emprestimo(biblioteca_alexandria, "O Hobbit")
-print("\n")
+    # testando limitações
 
-jonas.exibir_user_livros()
+    jonas.emprestimo(biblioteca_alexandria, "O Código Da Vinci")
 
-print("--- TESTANDO LIMITAÇÕES DA BIBLIOTECA ---")
+    visitante.emprestimo(biblioteca_alexandria, "1984")
+    print("\n")
 
-jonas.emprestimo(biblioteca_alexandria, "O Código Da Vinci")
+    # testando a função de devolução
+    jonas.devolução(biblioteca_alexandria, "1984")
+    print("\n")
 
-visitante.emprestimo(biblioteca_alexandria, "1984")
-print("\n")
+    jonas.exibir_user_livros()
 
-print("--- JONAS DEVOLVENDO LIVRO ---")
-jonas.devolução(biblioteca_alexandria, "1984")
-print("\n")
+    # testando falhas na devolução
 
-jonas.exibir_user_livros()
+    jonas.devolução(biblioteca_alexandria, "Dom Quixote") 
 
-print("--- TESTANDO FALHAS DE DEVOLUÇÃO ---")
-
-jonas.devolução(biblioteca_alexandria, "Dom Quixote") 
-
-jonas.devolução(biblioteca_alexandria, "O Código Da Vinci")
+    jonas.devolução(biblioteca_alexandria, "O Código Da Vinci")

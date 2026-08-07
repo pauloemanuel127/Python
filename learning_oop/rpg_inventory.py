@@ -93,19 +93,23 @@ class Personagem:
         print(f"Capacidade: {self._calcular_peso()}/{self.capacidade_maxima}\n")
         print("="*42, "\n")
 
+if __name__ == "__main__":
 
-Rogerio = Personagem()
+    # Instanciando os objetos
+    Rogerio = Personagem()
+    espada_de_fogo = Arma("espada flamejante", 25.0, 5.0, "épica")
+    poção_de_vida = Pocao("poção de vida", 0.5, "comum")
+    minigun = Arma("minigun", 100.0, 20.5, "lendária")
 
-espada_de_fogo = Arma("espada flamejante", 25.0, 5.0, "épica")
-poção_de_vida = Pocao("poção de vida", 0.5, "comum")
-minigun = Arma("minigun", 100.0, 20.5, "lendária")
+    # testando a função de adicionar
+    Rogerio.adicionar_item(espada_de_fogo)
+    Rogerio.adicionar_item(poção_de_vida)
+    Rogerio.exibir_inventario()
 
-Rogerio.adicionar_item(espada_de_fogo)
-Rogerio.adicionar_item(poção_de_vida)
-Rogerio.exibir_inventario()
-Rogerio.remover_item("espada flamejante")
-Rogerio.adicionar_item(minigun)
-Rogerio.exibir_inventario()
-Rogerio.remover_item("poção de vida")
-Rogerio.adicionar_item(espada_de_fogo)
-Rogerio.exibir_inventario()
+    # testando a função de controle de peso
+    Rogerio.remover_item("espada flamejante")
+    Rogerio.adicionar_item(minigun)
+    Rogerio.exibir_inventario()
+    Rogerio.remover_item("poção de vida")
+    Rogerio.adicionar_item(espada_de_fogo)
+    Rogerio.exibir_inventario()

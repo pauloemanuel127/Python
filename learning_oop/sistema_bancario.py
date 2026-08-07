@@ -116,6 +116,10 @@ class ContaBancaria:
             self.interface()
             self.logica()
 
+if __name__ == "__main__":
 
-conta1 = ContaBancaria("Felipe")
-conta1.começar()
+    # Instanciando o objeto
+    conta1 = ContaBancaria("Felipe")
+
+    # rodando o programa
+    conta1.começar()
