@@ -1,4 +1,5 @@
 from random import randint
+from __future__ import annotations
 
 class Personagem:
 
@@ -72,7 +73,7 @@ class Guerreiro(Personagem):
         valor = randint(3, 7)
         inimigo.sofrer_dano(self, self._ataque * valor)
         print(f"O {self.nome} atacou e causou {int((self._ataque * valor) - inimigo.get_defesa())} de dano")  
-        
+
 class Monstro(Personagem):
 
     def __init__(self):

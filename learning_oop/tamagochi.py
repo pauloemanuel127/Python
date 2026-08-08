@@ -1,4 +1,5 @@
 import random
+from __future__ import annotations
 
 class Tamagochi:
 

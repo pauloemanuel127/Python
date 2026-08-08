@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 class ContaBancaria:
 
     def __init__(self, titular: str):

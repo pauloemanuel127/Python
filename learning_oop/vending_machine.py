@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 class Usuario:
 
     def __init__(self, nome: str, dinheiro: float) -> None:

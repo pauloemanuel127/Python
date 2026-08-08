@@ -1,4 +1,5 @@
 from random import randint
+from __future__ import annotations
 
 class Vaga:
 

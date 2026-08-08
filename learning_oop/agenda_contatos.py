@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 class Contato:
 
     def __init__(self, nome: str, numero: int) -> None:

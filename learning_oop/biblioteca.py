@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 class Livro:
 
     def __init__(self, titulo: str, autor: str) -> None:
