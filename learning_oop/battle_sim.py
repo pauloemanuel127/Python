@@ -44,6 +44,7 @@ class Personagem:
     def get_hp(self) -> str:
 
         return f"O {self.nome} está com {int(self._vida)} de vida"
+    
 class Mago(Personagem):
 
     def __init__(self, nome: str) -> None:
@@ -57,6 +58,7 @@ class Mago(Personagem):
         valor = randint(3, 7)
         inimigo.sofrer_dano(self, self._magia * valor)
         print(f"O {self.nome} atacou e causou {int((self._magia * valor) - inimigo.get_defesa_magica())} de dano")
+
 class Guerreiro(Personagem):
 
     def __init__(self, nome: str) -> None:
@@ -70,6 +72,7 @@ class Guerreiro(Personagem):
         valor = randint(3, 7)
         inimigo.sofrer_dano(self, self._ataque * valor)
         print(f"O {self.nome} atacou e causou {int((self._ataque * valor) - inimigo.get_defesa())} de dano")  
+        
 class Monstro(Personagem):
 
     def __init__(self):
