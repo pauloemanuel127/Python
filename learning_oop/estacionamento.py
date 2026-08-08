@@ -106,10 +106,10 @@ class Estacionamento:
             
 class Carro:
 
-    def __init__(self, nome) -> None:
+    def __init__(self, nome: str) -> None:
 
-        self.nome = nome
-        self.estacionado = False
+        self.nome: str = nome
+        self.estacionado: bool = False
 
     def __repr__(self) -> str:
 
